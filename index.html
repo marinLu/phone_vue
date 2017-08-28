@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>project</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+  	var num = window.devicePixelRatio;
+	var bili = 1/num;
+	var meta_vp = document.createElement('meta');
+	meta_vp.name = 'viewport';
+	meta_vp.content = 'width=device-width, user-scalable=no, initial-scale='+bili+', maximum-scale='+bili+', minimum-scale=='+bili+'';
+	document.head.appendChild(meta_vp);
+
+
+	
+	var wid = document.documentElement.clientWidth/10;
+	document.documentElement.style.fontSize = wid + 'px';
+  </script>
+</html>
